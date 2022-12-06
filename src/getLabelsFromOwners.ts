@@ -1,5 +1,5 @@
 import randomColor from 'randomcolor'
-
+const owner_updated = ""
 export interface Label {
   name: string
   color: string
