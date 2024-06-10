@@ -37,11 +37,11 @@ export async function applyLabels(
   if (labelsAll.length === 0) {
     return
   }
-  // await client.issues.addLabels({
-  //   owner: context.issue.owner,
-  //   repo: context.issue.repo,
-  //   // eslint-disable-next-line @typescript-eslint/camelcase
-  //   issue_number: context.issue.number,
-  //   labels: labelsAll
-  // })
+  await client.issues.addLabels({
+    owner: context.issue.owner,
+    repo: context.issue.repo,
+    // eslint-disable-next-line @typescript-eslint/camelcase
+    issue_number: context.issue.number,
+    labels: labelsAll
+  })
 }
